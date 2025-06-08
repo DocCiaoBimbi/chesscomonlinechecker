@@ -1,2 +1,2 @@
-# chesscomonlinechecker
-Python bot checks if someone is online on Chess.com
+# Chess.com Online Checker
+Python bot (made with tkinter) that checks if a user is online on Chess.com
