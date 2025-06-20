@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-TOKEN = "7579561581:AAGPMxnzMt9NOTJc_AyMsBreyDHfjha3-Yo"
+TOKEN = "" # Insert you telegram bot token
 bot = telebot.TeleBot(TOKEN)
 
 followed_users = {}
@@ -39,13 +39,13 @@ def follow_user(chat_id, username):
         
         if is_online and not was_online:
             bot.send_message(chat_id, f"{username} è online su Chess.com!")
-            was_online = True  # Aggiorna lo stato a "online"
+            was_online = True 
         elif not is_online and was_online:
             bot.send_message(chat_id, f"{username} è offline su Chess.com.")
-            was_online = False  # Aggiorna lo stato a "offline"
+            was_online = False
 
-        tm.sleep(5)  # Controlla ogni 5 secondi
-
+        tm.sleep(5)  
+    
 def follow_user(chat_id, username):
     followed_users[chat_id] = followed_users.get(chat_id, [])
     if username not in followed_users[chat_id]:
