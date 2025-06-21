@@ -1,4 +1,4 @@
 # Chess.com Online Checker
-Python bot (made with tkinter) that checks if a user is online on Chess.com
+A Telegram bot (made with Python) that checks if a user is online on Chess.com
 ## Supported Languages
 - Italian
